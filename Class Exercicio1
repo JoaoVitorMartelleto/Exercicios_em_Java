@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class Exercicio1 {
       
     Scanner ent = new Scanner(System.in);
+    
     public void quest1(){
         System.out.println("Qual seu nome?");
         String nome = ent.nextLine();
+        
         System.out.println("Meu nome é "+nome);
     }
     public void quest2(){
@@ -15,6 +17,7 @@ public class Exercicio1 {
         int ano = ent.nextInt();
         LocalDate dataatual = LocalDate.now();
         int anoatual = dataatual.getYear();
+        
         System.out.println("A minha idade é "+ (anoatual - ano));
         } 
     public void quest3(){
@@ -22,6 +25,7 @@ public class Exercicio1 {
         float peso = ent.nextFloat();
         System.out.println("Altura: ");
         float altura = ent.nextFloat();
+        
         System.out.println("Pesso: "+peso+" | Altura: "+altura);
         }
     public  void quest4(){
@@ -29,6 +33,7 @@ public class Exercicio1 {
         int num1 = ent.nextInt();
         System.out.println("Digite o segundo número: ");
         int num2 = ent.nextInt();
+        
         System.out.println("A soma dos números é: "+(num1+num2));
         System.out.println("A subtração dos números é: "+(num1-num2));
         }
@@ -37,6 +42,8 @@ public class Exercicio1 {
         int num1 = ent.nextInt();
         System.out.println("Digite o segundo número: ");
         int num2 = ent.nextInt();
+        ent.nextLine();
+        
         System.out.println("A soma dos números é: "+(num1+num2));
         System.out.println("A subtração dos números é: "+(num1-num2));
         System.out.println("A multiplicação dos números é: "+(num1*num2));
@@ -63,6 +70,7 @@ public class Exercicio1 {
         float salario = ent.nextFloat();
         System.out.println("Digite quantos horas o funcionario trabalho por mês: ");
         float hora = ent.nextFloat();
+        
         System.out.println("O nome do funcionario é "+nome+" ele recebe "+(salario*hora)+" por mês");
     }
 }
