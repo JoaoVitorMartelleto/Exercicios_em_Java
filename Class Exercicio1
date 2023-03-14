@@ -1,0 +1,68 @@
+package com.mycompany.atividade_1_1;
+import java.time.LocalDate;
+import java.util.Scanner;
+
+public class Exercicio1 {
+      
+    Scanner ent = new Scanner(System.in);
+    public void quest1(){
+        System.out.println("Qual seu nome?");
+        String nome = ent.nextLine();
+        System.out.println("Meu nome é "+nome);
+    }
+    public void quest2(){
+        System.out.println("Qual seu ano de nascimento?");
+        int ano = ent.nextInt();
+        LocalDate dataatual = LocalDate.now();
+        int anoatual = dataatual.getYear();
+        System.out.println("A minha idade é "+ (anoatual - ano));
+        } 
+    public void quest3(){
+        System.out.println("Peso: ");
+        float peso = ent.nextFloat();
+        System.out.println("Altura: ");
+        float altura = ent.nextFloat();
+        System.out.println("Pesso: "+peso+" | Altura: "+altura);
+        }
+    public  void quest4(){
+        System.out.println("Digite o primeiro número: ");
+        int num1 = ent.nextInt();
+        System.out.println("Digite o segundo número: ");
+        int num2 = ent.nextInt();
+        System.out.println("A soma dos números é: "+(num1+num2));
+        System.out.println("A subtração dos números é: "+(num1-num2));
+        }
+    public void quest5(){
+        System.out.println("Digite o primeiro número: ");
+        int num1 = ent.nextInt();
+        System.out.println("Digite o segundo número: ");
+        int num2 = ent.nextInt();
+        System.out.println("A soma dos números é: "+(num1+num2));
+        System.out.println("A subtração dos números é: "+(num1-num2));
+        System.out.println("A multiplicação dos números é: "+(num1*num2));
+        System.out.println("A divisão dos números é: "+(num1/num2));
+    }
+    public void quest6(){
+        System.out.println("Digite a primeira nota: ");
+        String nota1 = ent.nextLine();
+        System.out.println("Digite a segunda nota: ");
+        String nota2 = ent.nextLine();
+        System.out.println("Digite a terceira nota: ");
+        String nota3 = ent.nextLine();
+        
+        float nota1_num = Float.parseFloat(nota1);
+        float nota2_num = Float.parseFloat(nota2);
+        float nota3_num = Float.parseFloat(nota3);
+        
+        System.out.println("A média é: "+((nota1_num + nota2_num + nota3_num)/3));
+    }
+    public void quest7(){
+        System.out.println("Digite o nome do funcionario: ");
+        String nome = ent.nextLine();
+        System.out.println("Digite quantos reais o funcionario recebe por hora: ");
+        float salario = ent.nextFloat();
+        System.out.println("Digite quantos horas o funcionario trabalho por mês: ");
+        float hora = ent.nextFloat();
+        System.out.println("O nome do funcionario é "+nome+" ele recebe "+(salario*hora)+" por mês");
+    }
+}
